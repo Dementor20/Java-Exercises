@@ -18,4 +18,19 @@ public class Number {
 
 	}
 
+	public void showOddNumbers(){
+	
+		int index;
+		String line = "";
+
+		for (index = 1; index < 20; index = index + 2){
+			
+			line += Integer.toString(index) + " ";
+		
+		}
+
+		System.out.println(line);
+	
+	}
+
 }
