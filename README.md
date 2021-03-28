@@ -1,3 +1,3 @@
-# Java-UTN-Repository
+# Java-Repository
 
 Tareas, ejercicios y otras cosas más de la materia de Java.
