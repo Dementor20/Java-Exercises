@@ -58,7 +58,7 @@ public class Menu {
 	
 	private void start() {
 		
-		int x, CANT = 2;
+		int x, count, CANT = 5;
 		String word; String[] words = new String[CANT];
 		
 		// Haré solo dos, no me jodan :P
@@ -74,18 +74,26 @@ public class Menu {
 		
 		boolean encontrado = false;
 		
-		for (String w: words) {
-			if (w.equals(word)) {
+		count = 0;
+		
+		while (count<CANT && encontrado == false){
+			
+			if (word.equals(words[count])) {
+				
 				encontrado = true;
-				// Esto es una porquería, no es la forma, podría hacerlo con un while
-				// pero no tengo ganas de escribir mucho, sin embargo, lo haré más abajo...
-				break;
+				
 			}
+			
+			count++;
+			
 		}
 		
 		if (encontrado) {
 			System.out.println("PALABRA ENCONTRADA :P");
+		} else {
+			System.out.println("No se encontró ninguna mierda de palabra");
 		}
+		
 		
 	}
 
