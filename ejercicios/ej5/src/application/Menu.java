@@ -1,7 +1,6 @@
 package application;
 
-import employees.Administrativo;
-import employees.Vendedor;
+import employees.*;
 
 public class Menu {
 
@@ -48,7 +47,7 @@ public class Menu {
 	public void display() {
 		
 		int option, MAX_EMPLEADOS = 20;
-		Object[] empleados = new Object[MAX_EMPLEADOS];
+		Empleado[] empleados = new Empleado[MAX_EMPLEADOS];
 		
 		do {
 	
@@ -113,7 +112,7 @@ public class Menu {
 		
 	}
 	
-	private void loadEmployees(Object[] empleados, int MAX_EMPLEADOS) {
+	private void loadEmployees(Empleado[] empleados, int MAX_EMPLEADOS) {
 		
 		// Datos generales
 		int tipoEmpleado, n_empleado = 0;
@@ -179,7 +178,7 @@ public class Menu {
 		
 	}
 	
-	private void listEmployees(Object[] empleados, int MAX_EMPLEADOS) {
+	private void listEmployees(Empleado[] empleados, int MAX_EMPLEADOS) {
 		
 		int i;
 		
