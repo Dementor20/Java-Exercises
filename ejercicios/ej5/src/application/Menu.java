@@ -184,8 +184,6 @@ public class Menu {
 		int i;
 		
 		for (i = 0; i < MAX_EMPLEADOS; i++) {
-			
-			try {
 				
 				if (empleados[i] instanceof Administrativo) {
 					
@@ -196,7 +194,7 @@ public class Menu {
 					System.out.println("DNI: " + empleado.getDni());
 					System.out.println("Sueldo: " + empleado.getSueldo());
 					
-				} else {
+				} else if (empleados[i] instanceof Vendedor) {
 					
 					Vendedor empleado = (Vendedor)empleados[i];
 					
@@ -207,7 +205,6 @@ public class Menu {
 					
 				}
 				
-			} catch (Exception e) {};
 			
 		}
 		
