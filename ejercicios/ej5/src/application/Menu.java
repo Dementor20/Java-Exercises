@@ -182,7 +182,7 @@ public class Menu {
 		
 		int i;
 		
-		for (i = 0; i < MAX_EMPLEADOS; i++) {
+		/*for (i = 0; i < MAX_EMPLEADOS; i++) {
 				
 				if (empleados[i] instanceof Administrativo) {
 					
@@ -204,6 +204,19 @@ public class Menu {
 					
 				}
 				
+			
+		}*/
+		
+		for (Empleado empleado: empleados) {
+			
+			try {
+			
+				System.out.println("Nombre: " + empleado.getNombre());
+				System.out.println("Apellido: " + empleado.getApellido());
+				System.out.println("DNI: " + empleado.getDni());
+				System.out.println("Sueldo: " + empleado.getSueldo());
+				
+			} catch(Exception e) {}
 			
 		}
 		
