@@ -4,15 +4,9 @@ import java.util.ArrayList;
 
 public class Main {
 	
-	private Input input;
+	static Input input = new Input();
 	
-	public Main(){
-		
-		input = new Input();
-		
-	}
-	
-	private ArrayList<Integer> getIntegers(ArrayList<Integer> integers){
+	public static ArrayList<Integer> getIntegers(ArrayList<Integer> integers){
 		
 		int i, number, MAX_INTEGER = 4;
 		
@@ -28,7 +22,7 @@ public class Main {
 		
 	}
 	
-	private boolean checkFuckingNumber(int number, int magicNumber) {
+	public static boolean checkFuckingNumber(int number, int magicNumber) {
 		
 		if (number > magicNumber) {
 			
@@ -40,7 +34,7 @@ public class Main {
 		
 	}
 	
-	private ArrayList<Integer> getBigNumbers(ArrayList<Integer> integers, ArrayList<Integer> bigNumbers){
+	public static ArrayList<Integer> getBigNumbers(ArrayList<Integer> integers, ArrayList<Integer> bigNumbers){
 		
 		int i, number, MAX_INTEGER = 4;
 		
@@ -62,7 +56,7 @@ public class Main {
 		
 	}
 	
-	private void displayNumbers(ArrayList<Integer> bigNumbers) {
+	public static void displayNumbers(ArrayList<Integer> bigNumbers) {
 		
 		System.out.println("Estos son los numeros más grandes que el inicial: ");
 		
@@ -79,11 +73,9 @@ public class Main {
 		ArrayList<Integer> integers = new ArrayList<Integer>();
 		ArrayList<Integer> bigNumbers = new ArrayList<Integer>();
 		
-		Main m = new Main();
+		bigNumbers = getBigNumbers(getIntegers(integers), bigNumbers);
 		
-		bigNumbers = m.getBigNumbers(m.getIntegers(integers), bigNumbers);
-		
-		m.displayNumbers(bigNumbers);
+		displayNumbers(bigNumbers);
 		
 	}
 	
