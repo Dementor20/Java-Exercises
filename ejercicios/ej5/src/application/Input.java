@@ -53,6 +53,7 @@ public class Input{
 
 	}
 	
+	/* Esto es redundante pero no tenía ganas de seguir con una versión nueva, pensaré uno luego :P */
 	public double setInputDouble(String text){
 		
 		boolean isWrong = true;
